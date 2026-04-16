@@ -1,1 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+
+      .form-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        width: 300px;
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+      }
+
+      .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-size: 14px;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      .input-group input:focus {
+        border-color: #4facfe;
+        box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+      }
+
+      .btn-submit {
+        width: 100%;
+        padding: 10px;
+        background: #4facfe;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn-submit:hover {
+        background: #3a8fd9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <div class="input-group">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" placeholder="Ingresa tu usuario" />
+        </div>
+
+        <div class="input-group">
+          <label for="contrasena">Contraseña</label>
+          <input
+            type="password"
+            id="contrasena"
+            placeholder="Ingresa tu contraseña"
+          />
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
 
