@@ -22,3 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('form');
+    
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        
+        const usuario = document.getElementById('usuario').value;
+        const contrasena = document.getElementById('contrasena').value;
+
+        // Simple validation
+        if (usuario === '' || contrasena === '') {
+            alert('Por favor, complete todos los campos.');
+            return;
+        }
+
+        // Simulate a login process
+        if (usuario === 'admin' && contrasena === 'password') {
+            alert('Inicio de sesión exitoso!');
+            // Redirect or perform other actions
+        } else {
+            alert('Credenciales incorrectas. Inténtalo de nuevo.');
+        }
+    });
+});
